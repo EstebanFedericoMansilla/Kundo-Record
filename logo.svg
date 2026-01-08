@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f1c40f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Icon: Stylized Record/Waveform K -->
+  <g transform="translate(20, 15)">
+    <!-- Vinyl Circle simplified -->
+    <circle cx="35" cy="35" r="30" stroke="url(#goldGradient)" stroke-width="2" fill="none" />
+    <circle cx="35" cy="35" r="10" fill="url(#goldGradient)" opacity="0.8" />
+    
+    <!-- Stylized K integrated -->
+    <path d="M25 20 V50 M25 35 L45 20 M25 35 L45 50" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Text: KUNDO -->
+  <text x="100" y="55" font-family="'Playfair Display', 'Times New Roman', serif" font-weight="bold" font-size="40" fill="white" letter-spacing="4">KUNDO</text>
+  
+  <!-- Text: RECORD -->
+  <text x="104" y="80" font-family="'Outfit', 'Arial', sans-serif" font-weight="400" font-size="14" fill="url(#goldGradient)" letter-spacing="6" text-transform="uppercase">RECORD</text>
+</svg>
